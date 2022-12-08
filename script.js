@@ -84,18 +84,25 @@ function displayUserBoards(userBoardsNumber) {
 
   for (let userBoards = 1; userBoards <= userBoardsNumber; userBoards++) {
     let newBoard = document.createElement("div");
-    newBoard.classList.add("bingoboard");
+    newBoard.classList.add("userboards");
     userBoardsNode.appendChild(newBoard);
     console.log(newBoard);
+    let usedNumbers = [];
 
     for (let cell = 1; cell <= 24; cell++) {
       let newCell = document.createElement("div");
       let randomNumber = Math.floor(Math.random() * 76) + 1;
 
       newCell.classList.add("bingo-cell");
-      newCell.innerText = randomNumber;
 
-      newBoard.appendChild(newCell);
+      if (usedNumbers.includes(randomNumber)) {
+        console.log("this number exists");
+        cell--;
+      } else {
+        newCell.innerText = randomNumber;
+        usedNumbers.push(randomNumber);
+        newBoard.appendChild(newCell);
+      }
     }
   }
 }

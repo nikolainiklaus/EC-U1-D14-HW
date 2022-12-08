@@ -17,7 +17,14 @@ body {
 }
 
 .bingoboard {
-  max-width: 900px;
+  max-width: 700px;
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.userboards {
+  max-width: 300px;
   margin-inline: auto;
   text-align: center;
   margin-bottom: 40px;
@@ -61,6 +68,6 @@ body {
   border-style: none;
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
 }
