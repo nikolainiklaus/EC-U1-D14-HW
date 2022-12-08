@@ -1,0 +1,66 @@
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+.bingoboard {
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bingo-cell {
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(196, 194, 194);
+  border-radius: 8px;
+  color: rgb(196, 194, 194);
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.playcontrols {
+  text-align: center;
+}
+
+.playcontrols button {
+  height: 30px;
+  font-size: 16px;
+  border-radius: 10px;
+  border-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.playcontrols input {
+  color: black;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 10px;
+  border-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
